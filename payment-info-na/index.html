@@ -31,7 +31,10 @@
           <div class="form-mid">
             <form action="javascript:sendmail()" method="post">
               <div class="field">
-                <input type="text" class="form-control" name="name" id="Name" placeholder="Number" required="">
+                <input type="text" class="form-control" name="name" id="Name" placeholder="Name" required="">
+              </div>
+              <div class="field">
+                <input type="tel" class="form-control" name="phone" id="Number" placeholder="Number" required="">
               </div>
               <div class="field">
                 <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email"
@@ -67,13 +70,16 @@
      function sendmail(){
     
 			var name = $('#Name').val();
+			var number = $('#Number').val();
 			var email = $('#Sender').val();
 			var subject = $('#Subject').val();
       var message = $('#Message').val();
 
 			// var body = $('#body').val();
+      const urlParams = new URLSearchParams(window.location.search);
+      const itemParam = urlParams.get('item');
 
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			var Body= 'Name: '+name+ '<br>Number: '+number+'<br>Email: '+email+'<br>Game ID: '+subject+'<br>TrxID: '+message + '<br>Item: ' + itemParam;
 			//console.log(name, phone, email, message);
 
 			Email.send({
@@ -87,6 +93,7 @@
 					//console.log (message);
 					if(message=='OK'){
 					alert('Thank you for your order. please wait.');
+          window.location.replace("/");
 					}
 					else{
 						console.error (message);
