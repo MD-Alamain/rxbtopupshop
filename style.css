@@ -1,0 +1,88 @@
+
+body{
+    background-color: rgb(222, 225, 226);
+    
+}
+.name-highlight{
+    background-color: #2b3a42;
+    color: rgb(251, 251, 251);
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Stick No Bills', sans-serif;
+    color: rgb(49, 47, 47);
+    }
+.t-d{
+    border: 1px solid black;
+    background-color:rgb(231, 230, 230);
+    margin: 5px 1px 5px 40px;
+    border-radius: 5px;
+    padding: 10px 1px;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    float: left;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Gemunu Libre', sans-serif;
+    
+
+}
+
+#head-line{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.d-list{
+    width:400px;
+}
+.ex-area{
+    border: 2px solid black;
+    padding: 5px 5px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: 2px 15px;
+}
+#order-line{
+    color: red;
+}
+#order-submit{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border-radius: 2px;
+}
+#fftext{
+    text-align: center;
+    color: rgb(71, 70, 67);
+    font-family: 'Abel', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Stick No Bills', sans-serif;
+    color: rgb(0, 0, 0);
+   
+}
+#futter{
+    color: red;
+}
+.fb-re{
+    text-decoration: none;
+    color: rgb(56, 55, 55);
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+
+}
+#fb-fu{
+    text-align: center;
+}

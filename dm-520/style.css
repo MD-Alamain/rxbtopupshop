@@ -1,0 +1,23 @@
+.bk-na img{
+    width: 30%;
+    padding: 5px 4px 5px 2px;
+    margin: 2px 2px 2px 20px;
+    border: 1px solid rgb(209, 205, 205);  
+    float: left;
+    background-color: rgb(233, 233, 233);
+    
+}
+#bk-img{
+    width: 67%;
+
+}
+h2{
+    font-family: 'Anonymous Pro', monospace;
+}
+.list{
+    border: 1px solid black;
+    background-color: rgb(206, 203, 203);
+    padding: 0px 1px 1px 30px;
+    color: rgb(29, 26, 26);
+    font-family: 'Anonymous Pro', monospace;
+}
