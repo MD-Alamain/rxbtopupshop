@@ -226,12 +226,13 @@ button.btn-contact {
   font-family: 'Anonymous Pro', monospace;
   color: rgb(29, 26, 26) ;
   font-weight: 100;
+  padding: 5px;
   
 }
 #bk-num{
 font-weight: bold; 
 font-family: 'Anonymous Pro', monospace;
-background-color: rgb(224, 221, 221);
+background-color: rgb(223, 217, 220);
 border-radius: 2px;
  
 }
@@ -242,4 +243,11 @@ border-radius: 2px;
   font-size: 13px;
   color: #ff4c4c;
   font-weight: bold;
+}
+#bk-text{
+  background-color: rgb(219, 217, 219);
+  border-radius: 4px;
+  padding: 1px;
+  color: #cd1b5d;
+  
 }

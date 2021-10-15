@@ -13,9 +13,9 @@
 <br><br>
 <section>
   <div class="num">
-    <h4> You select method: Nagad.</h4>
-    <h4> Nagad Personal Number: <span id="na-num">01630328733</span></h4>
-    <h4> send money;</h4>
+    <h4> You select method: <span id="na-text">Nagad</span></h4><br>
+    <h4> Nagad Personal Number: <span id="na-num">01630328733</span></h4><br>
+    <h4> send money;</h4><br>
     <h4> <span id="bang-text" >সেন্ড মানি করার পর নিচে তথ্য গুলো সাবমিট করুন।</span> </h4>
     </div>
 </section>  
@@ -81,11 +81,14 @@
 
 			var Body= 'Name: '+name+ '<br>Number: '+number+'<br>Email: '+email+'<br>Game ID: '+subject+'<br>TrxID: '+message + '<br>Item: ' + itemParam;
 			//console.log(name, phone, email, message);
-
+      
+      //https://script.google.com/macros/s/AKfycbyEX8K0fjr36zAsFNJEz3JxY76syNLONXGjiR18AUivVe4G5ppvLQf7DC-yVJACh2FN/exec
 			Email.send({
-        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        Host : "mail.rxbtopupshop.com",
+        Username : "topup@rxbtopupshop.com",
+        Password : "V7GQy8wx98",
 				To: 'rxbtopupshophelpcenter@gmail.com',
-				From: "mdalaminnae1623@gmail.com",
+				From: "topup@rxbtopupshop.com",
 				Subject: "New message on contact from "+name,
 				Body: Body
 			}).then(
