@@ -36,8 +36,8 @@
             <div class="form-mid">
               <form action="javascript:sendmail()" method="post" name="google-sheet">
                 <div class="field">
-                  <label for="item" class="form-label">Item</label>
-                  <input type="text" class="form-control" name="Product" id="item" value="100" readonly="readonly">
+                  <label for="item" class="form-label">Your Item</label>
+                  <input type="text" class="form-control" name="Product" id="item" value="100" disabled>
                 </div>
                 <div class="field">
                   <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
@@ -50,11 +50,6 @@
                 </div>
                 <div class="field">
                   <input type="text" class="form-control" name="Guid" id="Subject" placeholder="Game UId" required="">
-                </div>
-                <div class="field">
-                  <label for="item" class="form-label">Payment Method</label>
-                  <input type="text" class="form-control" name="Payment" id="payment-method" value="Bkash"
-                    readonly="readonly">
                 </div>
                 <input class="form-control" name="Trxid" id="Message" placeholder="Bkash Transaction ID"
                   required=""></input>
@@ -110,7 +105,11 @@
         const scriptURL =
           'https://script.google.com/macros/s/AKfycbyEX8K0fjr36zAsFNJEz3JxY76syNLONXGjiR18AUivVe4G5ppvLQf7DC-yVJACh2FN/exec'
         const form = document.forms['google-sheet']
+
         var formData = new FormData(form);
+        formData.append("Product", itemParam);
+        formData.append("Payment", "Bkash");
+
         fetch(scriptURL, {
             method: 'POST',
             body: formData
