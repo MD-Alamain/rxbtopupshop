@@ -220,7 +220,7 @@ button.btn-contact {
 
 /* /simple contact form */
 .num{
-  border: 1px solid black;
+  
   margin: 1px 8px;
   background-color: #ffffff;
   font-family: 'Anonymous Pro', monospace;
@@ -229,25 +229,91 @@ button.btn-contact {
   padding: 5px;
   
 }
+#paymer-number-area{
+  box-shadow: 10px 10px 40px ;
+  border-left: 4px solid red;
+  border-right: 4px solid red;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  margin: 10px 10px;
+  padding: 5px 5px;
+  font-family: 'Anonymous Pro', monospace;
+}
+#paymer-number-area h4{
+  font-size: 16px;
+}
 #bk-num{
-font-weight: bold; 
-font-family: 'Anonymous Pro', monospace;
-background-color: rgb(223, 217, 220);
-border-radius: 2px;
- 
+  background-color: #c7c7c7;
+  font-weight: bold; 
+  font-family: 'Anonymous Pro', monospace;
+  border-radius: 2px;
+  color: black; 
 }
 .num h4{
   font-family: 'Anonymous Pro', monospace;
 }
+#bk-box{
+  border: 1px solid black;
+  padding: 2px 2px;
+  background-color: rgb(145, 225, 228);
+}
+#num-dta{
+  background-color: #ff4800;
+  border: 1px solid black;
+  color: #f8f9fa;
+}
+#sm-box{
+  border: 1px solid black;
+  background-color:#ff4800;
+  color: #f8f9fa;
+}
 #bang-text{
-  font-size: 13px;
-  color: #ff4c4c;
+  font-size: 16px;
+  color: black;
   font-weight: bold;
+  background-color: chartreuse;
+  border: 2px solid black;
+  padding: 5px 2px;
+  text-align: justify;
+  display: inline-block;
 }
 #bk-text{
-  background-color: rgb(219, 217, 219);
+  font-weight: bold;
   border-radius: 4px;
   padding: 1px;
-  color: #cd1b5d;
+  color: #E2136E;
   
+  
+}
+#ban-text-2{
+  font-size: 16px;
+  font-weight: bold;
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 5px 5px;
+  text-align: justify;
+  display: inline-block;
+}
+#cnl{
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+}
+
+span {
+  content: "\26A0";
+  color: #ed1c24;
+  font-weight: bold;
+}
+#sm-mny{
+  font-size: 7px;
+  text-decoration: none;
+  color: #E2136E;
+  ;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: rgb(216, 216, 216);
+  padding: 2px 2px;
+
 }

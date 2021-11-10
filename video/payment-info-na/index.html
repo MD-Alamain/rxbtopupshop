@@ -12,19 +12,12 @@
 </head>
 
 <body>
- 
   <section>
-    <div id="paymer-number-area">
-      <h4> You select method:<span id="bk-text">bKash</span></h4>
-      <h4> bKash Personal Number: <span id="bk-num">01630328733</span></h4>
-      <h4> send money;</h4>
-      <a id="sm-mny" href="https://www.bkash.com/bn/products-services/send-money">*কিভাবে বিকাশে সেন্ডমানি করবো?</a>
-      </div>
-      <div class="num">
-      <h4 id="bang-text">উপরের নাম্বারে সেন্ড মানি করার পর নিচে তথ্য গুলো সাবমিট করুন।✓</h4>
-  
-      <h4 id="ban-text-2">টাকা না পাঠিয়ে অর্ডার করলে অর্ডার <span id="cnl">Cancel</span> করা হবে।<span>&#9888;</span>
-      </h4>
+    <div class="num">
+      <h4> You select method: <span id="na-text">Nagad</span></h4><br>
+      <h4> Nagad Personal Number: <span id="na-num">01630328733</span></h4> <br>
+      <h4> send money;</h4><br>
+      <h4> <span id="bang-text">সেন্ড মানি করার পর নিচে তথ্য গুলো সাবমিট করুন।</span></h4>
 
     </div>
   </section>
@@ -57,7 +50,7 @@
                 <div class="field">
                   <input type="text" class="form-control" name="Guid" id="Subject" placeholder="Game UId" required="">
                 </div>
-                <input class="form-control" name="Trxid" id="Message" placeholder="Bkash Transaction ID"
+                <input class="form-control" name="Trxid" id="Message" placeholder="Nagad Transaction ID"
                   required=""></input>
                 <button type="submit" class="btn btn-contact" id="submitBtn">SUBMIT</button>
               </form>
@@ -114,7 +107,7 @@
 
         var formData = new FormData(form);
         formData.append("Product", itemParam);
-        formData.append("Payment", "Bkash");
+        formData.append("Payment", "Nagad");
 
         fetch(scriptURL, {
             method: 'POST',
